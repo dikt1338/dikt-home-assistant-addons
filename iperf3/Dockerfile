@@ -10,7 +10,7 @@ RUN apk add --no-cache iperf3 \
 USER iperf
     
 # Expose the default iperf3 server ports
-EXPOSE 5201/tcp 5201/udp
+EXPOSE 52001/tcp 5001/udp
 
 # entrypoint allows you to pass your arguments to the container at runtime
 # very similar to a binary you would run. For example, in the following
@@ -21,7 +21,7 @@ ENTRYPOINT ["iperf3"]
 # If needed you can change/disable health check when starting container.
 # See Docker run reference documentation for more information.
 
-HEALTHCHECK --timeout=3s \
+HEALTHCHECK --timeout=360s \
  CMD iperf3 -k 1 -c 127.0.0.1 || exit 1
 
 # iperf3 -s = run in Server mode
