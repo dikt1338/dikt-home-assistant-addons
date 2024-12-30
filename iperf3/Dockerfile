@@ -10,7 +10,10 @@ RUN apk add --no-cache iperf3 \
 USER iperf
     
 # Expose the default iperf3 server ports
-EXPOSE 5201/tcp 5201/udp 5001/tcp 5001/udp
+EXPOSE 5201/tcp 
+EXPOSE 5201/udp
+EXPOSE 5001/tcp
+EXPOSE 5001/udp
 
 # entrypoint allows you to pass your arguments to the container at runtime
 # very similar to a binary you would run. For example, in the following
