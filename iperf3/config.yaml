@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: iperf3 Server
-version: "1.0.1"
+version: "1.0.2"
 slug: iperf3
 description: iperf3 Server on Homeassistant
 url: "https://github.com/dikt1338/dikt-home-assistant-addons/tree/main/iperf3"
