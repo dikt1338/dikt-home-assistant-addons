@@ -12,10 +12,6 @@ arch:
   - i386
 init: false
 ports:
-  5001/tcp: 5001
-  5001/udp: 5001
   5201/tcp: 5201
   5201/udp: 5201
-startup: system
 watchdog: tcp://[HOST]:5201
-init: false
