@@ -1,6 +1,6 @@
-# Home Assistant Add-on: Example add-on
+# Home Assistant Add-on: iperf3
 
-_Example add-on to use as a blueprint for new add-ons._
+_Addon to start a iperf3 server_
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
